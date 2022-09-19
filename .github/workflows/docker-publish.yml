@@ -1,7 +1,6 @@
 name: push
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - "main"
@@ -12,7 +11,7 @@ jobs:
     strategy:
       matrix:
         alpine_ver: [latest]
-        jre_ver: [17-jre-headless, 8-jre-base]
+        jre_ver: [18-jre-headless, 17-jre-headless, 8-jre-base]
     steps:
       - name: Login to DockerHub
         uses: docker/login-action@v1
