@@ -10,7 +10,7 @@ Includes only JRE-Headless package to further reduce the size, as most docker co
 Pull the image from [dockerhub](https://hub.docker.com/r/s3vt/java/)
 
 ```
-docker pull s3vt/java:18
+docker pull s3vt/java:17
 ```
 
 Copy the required jars/java classes to the image and execute with java
@@ -18,7 +18,7 @@ Copy the required jars/java classes to the image and execute with java
 e.g. Dockerfile
 
 ```
-FROM s3vt/java:18
+FROM s3vt/java:17
 
 RUN mkdir /app
 WORKDIR /app
