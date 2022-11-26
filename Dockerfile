@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 
 ARG JRE_VERSION
 LABEL repo="https://github.com/s3vt/java-docker.git"
