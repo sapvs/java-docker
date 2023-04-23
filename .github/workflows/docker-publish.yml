@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - id: get-id
         run: |
           id=$(echo ${{ matrix.jre_ver }} | cut -d- -f1)
@@ -40,6 +40,6 @@ jobs:
         uses: peter-evans/dockerhub-description@v3.1.0
         with: 
           username: ${{ secrets.DOCKERHUB_USER }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: vsapan/java
           short-description: ${{ github.event.repository.description }}
