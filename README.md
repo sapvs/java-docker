@@ -7,10 +7,10 @@ Includes only JRE-Headless package to further reduce the size, as most docker co
 
 ## Using this image
 
-Pull the image from [dockerhub](https://hub.docker.com/r/vsapan/java/)
+Pull the image from [dockerhub](https://hub.docker.com/r/vsaps/java/)
 
 ```
-docker pull vsapan/java:17
+docker pull vsaps/java:17
 ```
 
 Copy the required jars/java classes to the image and execute with java
@@ -18,7 +18,7 @@ Copy the required jars/java classes to the image and execute with java
 e.g. Dockerfile
 
 ```
-FROM vsapan/java:17
+FROM vsaps/java:17
 
 RUN mkdir /app
 WORKDIR /app
