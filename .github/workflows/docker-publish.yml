@@ -30,7 +30,7 @@ jobs:
           build-args: |
             JRE_VERSION=${{ matrix.jre_ver }}
           push: true
-          tags: vsapan/java:${{ steps.get-id.outputs.id }}
+          tags: vsaps/java:${{ steps.get-id.outputs.id }}
   update-readme:
     runs-on: ubuntu-latest
     needs: push
@@ -41,5 +41,5 @@ jobs:
         with: 
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: vsapan/java
+          repository: vsaps/java
           short-description: ${{ github.event.repository.description }}
