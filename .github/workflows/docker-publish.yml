@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         alpine_ver: [latest]
-        jre_ver: [17-jre-headless, 8-jre-base]
+        jre_ver: [11-jre-headless, 17-jre-headless, 18-jre-headless, 19-jre-headless, 20-jre-headless, 21-jre-headless,  8-jre-base]
     steps:
       - 
         name: Login to DockerHub
