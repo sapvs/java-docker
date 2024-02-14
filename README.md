@@ -1,3 +1,5 @@
+[![push](https://github.com/sapvs/java-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/sapvs/java-docker/actions/workflows/docker-publish.yml)
+
 # Java Alpine Image - JRE Headless
 
 Minimal java image with low footprint alpine linux base. 
