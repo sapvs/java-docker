@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        alpine_ver: [3.19]
+        alpine_ver: [3.19, 3.20, latest]
         jre_ver: [8-jre-base, 11-jre-headless, 17-jre-headless, 18-jre-headless, 19-jre-headless, 20-jre-headless, 21-jre-headless]
     steps:
       - 
@@ -43,6 +43,7 @@ jobs:
         with:
           build-args: |
             JRE_VERSION=${{ matrix.jre_ver }}
+            ALPINE_VERSION=${{ matrix.alpine_ver }}
           push: true
           #platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
           tags: vsaps/java:${{ steps.get-id.outputs.id }}
