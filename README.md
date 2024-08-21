@@ -31,3 +31,6 @@ COPY  target/my-jar.jar .
 #EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "my-jar.jar" ]
 ```
+
+## Source
+[java-docker](https://github.com/sapvs/java-docker)
