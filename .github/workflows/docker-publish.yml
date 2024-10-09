@@ -51,7 +51,7 @@ jobs:
             ALPINE_VERSION=${{ matrix.alpine_ver }}
           push: true
           #platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
-          tags: vsaps/java:${{ matrix.alpine_ver }}-${{ steps.get-id.outputs.id }}
+          tags: redblackcs/java:${{ matrix.alpine_ver }}-${{ steps.get-id.outputs.id }}
   update-readme:
     runs-on: ubuntu-latest
     needs: push
@@ -62,5 +62,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: vsaps/java
+          repository: redblackcs/java
           short-description: ${{ github.event.repository.description }}
