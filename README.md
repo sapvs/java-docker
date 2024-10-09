@@ -14,7 +14,7 @@ Image tags are of format `java:ALPINE_VERSION-JRE_VERSION`
 Pull the image from [dockerhub](https://hub.docker.com/r/vsaps/java/)
 
 ```
-docker pull vsaps/java:3.20-21
+docker pull redblackcs/java:3.20-21
 ```
 
 Copy the required jars/java classes to the image and execute with java
@@ -22,7 +22,7 @@ Copy the required jars/java classes to the image and execute with java
 e.g. Dockerfile
 
 ```
-FROM vsaps/java:3.20-21
+FROM redblackcs/java:3.20-21
 
 RUN mkdir /app
 WORKDIR /app
