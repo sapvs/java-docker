@@ -21,6 +21,7 @@ Copy the required jars/java classes to the image and execute with java
 
 e.g. Dockerfile
 
+
 ```docker
 FROM vsaps/java:21
 
@@ -31,3 +32,6 @@ COPY  target/my-jar.jar .
 #EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "my-jar.jar" ]
 ```
+
+## Source
+[java-docker](https://github.com/sapvs/java-docker)

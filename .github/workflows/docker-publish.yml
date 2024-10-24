@@ -43,7 +43,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v6.7.0
+        uses: docker/build-push-action@v6.9.0
         with:
           build-args: |
             JRE_VERSION=${{ matrix.jre_ver }}
@@ -60,5 +60,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: vsaps/java
+          repository: redblackcs/java
           short-description: ${{ github.event.repository.description }}
