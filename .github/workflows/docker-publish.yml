@@ -21,9 +21,6 @@ jobs:
             8-jre-base,
             11-jre-headless,
             17-jre-headless,
-            18-jre-headless,
-            19-jre-headless,
-            20-jre-headless,
             21-jre-headless,
           ]
     steps:
