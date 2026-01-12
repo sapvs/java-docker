@@ -1,4 +1,5 @@
-FROM alpine:latest
+#FROM alpine:latest
+FROM dhi.io/alpine-base:3.23-alpine3.23-dev
 
 ARG JRE_VERSION
 LABEL repo="https://github.com/sapvs/java-docker.git"
